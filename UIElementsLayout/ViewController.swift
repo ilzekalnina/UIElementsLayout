@@ -55,11 +55,18 @@ class ViewController: UIViewController {
         self.view.backgroundColor = UIColor.black
     }
     
-    func changeButtonImageForAllButtons(with image: String, button: UIButton!) {
-        button.setImage(UIImage(named: image), for: .normal)
-        button.tintColor = .yellow
-        button.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
+    func changeTextLabel(with message: String) {
+        let text = message
+        myLabel.text = text
+        myLabel.backgroundColor = UIColor.gray
+        mainImageView.image = UIImage(systemName: "mic")
     }
+    
+//    func changeButtonImageForAllButtons(with image: String, button: UIButton!) {
+//        button.setImage(UIImage(named: image), for: .normal)
+//        button.tintColor = .yellow
+//        button.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
+//    }
         
         
     @IBAction func touchDragOutsideTapped(_ sender: Any) {
@@ -68,18 +75,17 @@ class ViewController: UIViewController {
     }
     
     
-//    @IBAction func touchDragOutsideTapped(_ sender: Any) {
-//        print("touchDragOutsideTapped")
-//        changeButtonImage(with: "home.png")
-//    }
     
+    @IBAction func leftBottomButtonTaped(_ sender: Any) {
+        changeTextLabel(with: "leftBottomButtonTaped")
+    }
     
 
-    @IBAction func touchUpInsideLeftButtonDownTapped(_ sender: Any) {
-        print("touchUpInsideLeftButtonDownTapped")
-  //      changeButtonImageForAllButtons(with: "star.png", button: leftButtonDown)
-        
-    }
+//    @IBAction func touchUpInsideLeftButtonDownTapped(_ sender: Any) {
+//        print("touchUpInsideLeftButtonDownTapped")
+//    changeButtonImageForAllButtons(with: "home.png", button: leftButtonDown)
+//        
+//    }
     
     
 }

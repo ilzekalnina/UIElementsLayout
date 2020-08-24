@@ -60,9 +60,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="changeButtonImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gop-ff-cCL"/>
-                                    <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Stg-34-Yfl"/>
-                                    <action selector="touchUpInsideLeftButtonDownTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMo-bI-J0v"/>
+                                    <action selector="leftBottomButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jxb-6I-wmj"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press The Buttons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ1-al-gVk">
