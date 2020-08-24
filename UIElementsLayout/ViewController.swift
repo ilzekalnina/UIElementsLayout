@@ -47,9 +47,29 @@ class ViewController: UIViewController {
     }
     
     
+    func changeButtonImage(with image: String){
+        leftButtonUp.setImage(UIImage(named: image), for: .normal)
+        leftButtonUp.tintColor = .white
+        leftButtonUp.imageEdgeInsets = UIEdgeInsets(top: 8, left: 0, bottom: 10, right: 15)
+
+        self.view.backgroundColor = UIColor.black
+    }
+        
+        
+        
     @IBAction func touchDragOutsideTapped(_ sender: Any) {
         print("touchDragOutsideTapped")
+        changeButtonImage(with: "home.png")
     }
+    
+    
+ /*
+    @IBAction func touchDragOutsideTapped(_ sender: Any) {
+        print("touchDragOutsideTapped")
+        changeButtonImage(with: "home.png")
+    }
+    
+*/
     
     
 }

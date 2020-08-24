@@ -31,6 +31,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="rKT-TE-2DI"/>
+                                    <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWt-S5-aFD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5y4-vY-VoW">
@@ -58,6 +59,10 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="changeButtonImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gop-ff-cCL"/>
+                                    <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Stg-34-Yfl"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press The Buttons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ1-al-gVk">
                                 <rect key="frame" x="12" y="188" width="296" height="217"/>
@@ -90,8 +95,8 @@
                                 <rect key="frame" x="48" y="29" width="224" height="128"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="224" id="EsE-K7-jKt"/>
-                                    <constraint firstAttribute="height" constant="127.5" id="slz-Te-4aV"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="224" id="EsE-K7-jKt"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="127.5" id="slz-Te-4aV"/>
                                 </constraints>
                             </imageView>
                         </subviews>
@@ -99,6 +104,7 @@
                         <constraints>
                             <constraint firstItem="Wan-JP-nBs" firstAttribute="top" secondItem="5y4-vY-VoW" secondAttribute="bottom" constant="30" id="2ZS-zc-IWc"/>
                             <constraint firstItem="5y4-vY-VoW" firstAttribute="leading" secondItem="VYX-vy-Udz" secondAttribute="trailing" constant="36" id="4Pf-XT-bAr"/>
+                            <constraint firstItem="405-Mk-dAK" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5Xn-WO-LxD"/>
                             <constraint firstItem="405-Mk-dAK" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="5qL-vE-zeq"/>
                             <constraint firstItem="Wan-JP-nBs" firstAttribute="height" secondItem="5Uv-5j-MLo" secondAttribute="height" id="6dZ-uG-g6s"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Wan-JP-nBs" secondAttribute="bottom" constant="20" id="8cV-eB-fCh"/>
