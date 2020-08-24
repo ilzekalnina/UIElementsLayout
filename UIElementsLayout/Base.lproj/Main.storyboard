@@ -30,8 +30,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
+                                    <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Cyu-Cl-hij"/>
                                     <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="rKT-TE-2DI"/>
-                                    <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tWt-S5-aFD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5y4-vY-VoW">
@@ -62,6 +62,7 @@
                                 <connections>
                                     <action selector="changeButtonImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gop-ff-cCL"/>
                                     <action selector="touchDragOutsideTapped:" destination="BYZ-38-t0r" eventType="touchDragOutside" id="Stg-34-Yfl"/>
+                                    <action selector="touchUpInsideLeftButtonDownTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HMo-bI-J0v"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Press The Buttons" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJ1-al-gVk">
